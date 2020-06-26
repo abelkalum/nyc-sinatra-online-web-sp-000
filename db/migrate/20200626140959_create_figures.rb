@@ -1,4 +1,4 @@
-class CreateFigures < ActiveRecord::Migration
+class CreateFigures < ActiveRecord::Migration[4.2]
   def change
   end
 end

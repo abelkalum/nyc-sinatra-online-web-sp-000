@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_26_145451) do
+ActiveRecord::Schema.define(version: 2020_06_26_145549) do
+
+  create_table "figure_titles", force: :cascade do |t|
+    t.integer "title_id"
+    t.integer "figure_id"
+  end
 
   create_table "figures", force: :cascade do |t|
     t.string "name"
